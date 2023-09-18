@@ -11,12 +11,6 @@ router.get('/', async(req, res,next) =>{
     }catch(err){
         next(err)
     }
-    // Projects.get()
-    // .then(projects =>{
-    //     res.json(projects)
-    // })
-    // .catch(next)
-   
 })
 
 router.get('/:id', [checkId], (req, res) =>{
